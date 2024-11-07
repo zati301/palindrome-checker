@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- default -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- fonts, icons, css -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" />
+    <link rel="stylesheet" href="styles.css" />
+
+    <title>Palindrome Checker Project</title>
+  </head>
+  <body>
+    <main>
+      <h1 class="header">Palindrome Checker</h1>
+      <div class="paliindrome-container container">
+        <h4 class="header header-top">Test out if a word is a palindrome or not</h4>
+        <label for="text-input">Text: <input type="text" id="text-input" placeholder="A word" /></label>
+        <button id="check-btn" type="button">Check</button>
+        <p id="result"></p>
+      </div>
+
+      <div class="word-list-container container">
+        <h2 class="header">Word List</h2>
+        <div id="palindrome-words">
+          <h3 class="header">Palindrome words</h3>
+          <ul>
+          <li>A</li>
+          <li>eye</li>
+          <li>_eye</li>
+          <li>race car</li>
+          <li>A man, a plan, a canal. Panama</li>
+          <li>never odd or even</li>
+          <li>My age is 0, 0 si ega ym.</li>
+          <li>0_0 (: /-\ :) 0-0</li>
+        </ul>
+        </div>
+
+        <hr>
+
+        <div id="non-palindrome-words">
+          <h3 class="header">Not palindrome words</h3>
+          <ul>
+          <li>not a palindrome</li>
+          <li>nope</li>
+          <li>almostomla</li>
+          <li>1 eye for of 1 eye.</li>
+          <li>five|\_/|four</li>
+        </ul>
+        </div>
+      </div>
+    </main>
+
+    <!-- js -->
+    <script src="script.js"></script>
+  </body>
+</html>
